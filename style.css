@@ -1,0 +1,54 @@
+body {
+	background-color: #F0FFFF;
+	font-family: Arial, sans-serif;
+}
+
+img {
+	border: 2px solid #6495ED;
+	margin: 5px;
+}
+
+#main-header {
+	font-family: "Arial Black", Arial, sans-serif;
+	color: #6495ED;
+	text-decoration: underline;
+}
+
+.small-header {
+	font-family: "Arial Black", Arial, sans-serif;
+	color: #6495ED;
+}
+
+.content {
+	background-color: #ADD8E6;
+	padding: 5px;
+	margin: 10px;
+	border-radius: 25px;
+}
+
+#benefits {
+	background-image: url("images/benefits-background.jpg");
+}
+
+ul {
+	list-style-type: circle;
+}
+
+a:visited {
+	color: #008B8B;
+}
+
+footer {
+	text-align: center;
+	font-size: 80%;
+}
+
+
+@media screen and (max-width: 500px) {
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
