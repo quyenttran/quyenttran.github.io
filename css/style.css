@@ -1,8 +1,24 @@
+body {
+  margin: 0;
+}
+
 #intro {
+  position: absolute;
+  left:0;
+  right:0;
   background-image: url("../images/plants.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 80vh;
   box-shadow: inset 0 0 0 2000px rgba(169, 169, 169,0.3);
+}
+
+#name {
+  font-family: 'Quicksand', sans-serif;
+  color: #fff;
+  background-color: #bf81b5;
+  width: 50vw;
+  text-align: center;
+  font-size: 4vw;
 }
