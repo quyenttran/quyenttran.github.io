@@ -22,6 +22,7 @@ body {
 #construction {
   font-family: 'Quicksand', sans-serif;
   color: #fff;
+  font-size: 4vw;
   text-align: center;
   height: 20vh;
 }
@@ -46,5 +47,17 @@ a:link, a:visited {
 @media only screen and (max-width: 500px) {
   #intro {
     background-position: center;
+  }
+
+  #construction h1 {
+    font-size: 10vw;
+    position: absolute;
+    right: 0;
+    top: 20vh;
+    left: 0;
+  }
+
+  .content {
+    font-size: 3vw;
   }
 }
