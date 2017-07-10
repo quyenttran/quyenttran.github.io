@@ -6,7 +6,7 @@
   });
 
   app = {
-    text: "Hello stranger. How are you doing?",
+    text: "Hello, I'm Quyen.",
     index: 0,
     chars: 0,
     speed: 100,

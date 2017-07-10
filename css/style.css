@@ -12,14 +12,15 @@ body, html {
   font-family: 'Quicksand';
   color: black;
   width: 100%;
-  text-align: center;
+  text-align: left;
   height: 50px;
   line-height: 50px;
-  font-size: 30px;
+  font-size: 75px;
   position: absolute;
   top: 0;
-  bottom: 0;
-  margin:  auto;
+  bottom: 30vh;
+  left: 30vh;
+  margin: auto;
 }
 
 .text .content {
@@ -29,7 +30,7 @@ body, html {
 .text .dash {
   display: inline-block;
   height: 3px;
-  width:20px;
+  width:30px;
   background-color: #3498db;
   animation: blink .5s infinite linear;
 }
