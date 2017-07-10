@@ -56,9 +56,15 @@ body, html {
 }
 
 .about-me {
-  height: 20vh;
+  height: 40vh;
   background-color: white;
   margin: 0;
+}
+
+.about-me h1 {
+  text-align: center;
+  font-family: 'Quicksand';
+  font-size: 40px;
 }
 
 .skills {
