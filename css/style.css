@@ -55,19 +55,59 @@ body, html {
   box-shadow: inset 0 0 0 2000px rgba(220, 196, 212,0.3);
 }
 
-.about-me {
-  height: 40vh;
+.about-me-wrapper {
+  display: -webkit-flex;
+  display: flex;
+  width: 100vw;
+  height: auto;
   background-color: white;
+}
+
+.about-me {
+  width: 50vw;
+  height: auto;
+  margin: 0;
+  font-family: 'Raleway';
+  font-size: 20px;
+  padding: 30px;
+}
+
+.skills {
+  width: 50vw;
+  height: auto;
   margin: 0;
 }
 
 .about-me h1 {
+  margin: 0;
   text-align: center;
   font-family: 'Quicksand';
   font-size: 40px;
 }
 
+.skillbar {
+  width: 100%;
+  background-color: white;
+  color: #2196f3;
+}
+
 .skills {
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+  padding-right: 20px;
+  line-height: 40px;
+  font-family: 'Raleway';
+}
+
+.html {width: 80%; background-color: #2196F3}
+.ruby {width: 70%; background-color: #2196F3}
+.jquery {width: 70%; background-color: #2196F3}
+.python {width: 40%; background-color: #2196F3}
+.ui {width: 60%; background-color: #2196F3}
+.management {width: 80%; background-color: #2196F3}
+
+.projects {
   background-image: url("../images/plants.jpeg");
   min-height:40vh;
 }
