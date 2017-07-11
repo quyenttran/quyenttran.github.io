@@ -117,7 +117,7 @@ body, html {
 
 .projects-wrapper {
   background-image: url("../images/plants.jpeg");
-  height:50vh;
+  height:40vh;
   position: relative;
 }
 
@@ -137,4 +137,51 @@ body, html {
 
 .projects {
   height: auto;
+}
+
+ul.project-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul img {
+  border-radius: 20px;
+}
+
+ul.project-list li {
+  display: inline-block;
+  height: 150px;
+  margin: 0 1em 1em 0;
+  position: relative;
+  width: 200px;
+}
+
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 150px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 200px;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  font-family: 'Raleway';
+  font-size: 20px;
+}
+
+ul.project-list li:hover span.text-content {
+  opacity: 1;
 }
