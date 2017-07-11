@@ -2,7 +2,17 @@
   var app;
 
   $(document).ready(function() {
-    return app.init();
+    app.init();
+    $(".about-project").hide();
+    $("a").mouseenter(function() {
+      var imgId = $(this).find("img").attr('id');
+      $("." + imgId).show();
+    })
+
+    $("a").mouseleave(function() {
+      var imgId = $(this).find("img").attr('id');
+      $("." + imgId).hide();
+    })
   });
 
   app = {

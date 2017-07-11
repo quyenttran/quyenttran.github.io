@@ -185,3 +185,12 @@ span.text-content span {
 ul.project-list li:hover span.text-content {
   opacity: 1;
 }
+
+.about-project {
+  background-color: #ddd;
+  padding: 5px;
+  font-family: 'Raleway';
+  font-size: 15px;
+  border-radius: 10px;
+  width: 80%;
+}
