@@ -110,12 +110,31 @@ body, html {
 
 .html {width: 70%; background-color: #2196F3}
 .ruby {width: 70%; background-color: #2196F3}
-.jquery {width: 70%; background-color: #2196F3}
+.javascript {width: 60%; background-color: #2196F3}
 .python {width: 40%; background-color: #2196F3}
-.ui {width: 60%; background-color: #2196F3}
+.ui {width: 50%; background-color: #2196F3}
 .management {width: 70%; background-color: #2196F3}
 
-.projects {
+.projects-wrapper {
   background-image: url("../images/plants.jpeg");
-  min-height:40vh;
+  height:50vh;
+  position: relative;
+}
+
+.projects-details {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.projects-title h1 {
+  font-family: 'Quicksand';
+  font-size: 40px;
+}
+
+.projects {
+  height: auto;
 }
