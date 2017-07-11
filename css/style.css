@@ -119,7 +119,7 @@ body, html {
 
 .projects-wrapper {
   background-image: url("../images/plants.jpeg");
-  height:40vh;
+  height:auto;
   position: relative;
 }
 
