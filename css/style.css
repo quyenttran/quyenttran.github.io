@@ -1,63 +1,220 @@
-body {
+body, html {
+  height: 100%;
   margin: 0;
 }
 
-.intro-container {
-
+.main-bg {
+  background-image: url("../images/pink.jpeg");
+  min-height: 100vh;
+  position: relative;
+  margin: 0;
 }
 
-#intro {
+.text {
+  font-family: 'Quicksand';
+  color: black;
+  width: 100%;
+  text-align: left;
+  height: 50px;
+  line-height: 50px;
+  font-size: 75px;
   position: absolute;
-  left:0;
-  right:0;
-  background-image: url("../images/rocks.jpeg");
-  background-size: cover;
+  top: 0;
+  bottom: 30vh;
+  left: 30vh;
+  margin: auto;
+}
+
+.text .content {
+  display: inline;
+}
+
+.text .dash {
+  display: inline-block;
+  height: 3px;
+  width:30px;
+  background-color: #3498db;
+  animation: blink .5s infinite linear;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
   background-repeat: no-repeat;
-  background-position: center center;
   background-size: cover;
-  height: 100vh;
-  box-shadow: inset 0 0 0 2000px rgba(169, 169, 169,0.3);
+  box-shadow: inset 0 0 0 2000px rgba(220, 196, 212,0.3);
 }
 
-#construction {
-  font-family: 'Quicksand', sans-serif;
-  color: #fff;
-  font-size: 4vw;
+.about-me-wrapper {
+  display: -webkit-flex;
+  display: flex;
+  width: 100vw;
+  height: auto;
+  background-color: white;
+}
+
+.about-me {
+  width: 50vw;
+  height: auto;
+  margin: 0;
+  font-family: 'Raleway';
+  font-size: 20px;
+  padding: 30px;
+}
+
+.skills {
+  width: 50vw;
+  height: auto;
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+  font-family: 'Raleway';
+  margin-top: 0;
+  padding: 0 30px 30px 30px;
+}
+
+.skills-title {
+  padding: 30px 0 20px 0;
+}
+
+.skills > p:first-child {
+  margin-top: 0;
+}
+
+.about-me-wrapper h1 {
+  margin: 0;
   text-align: center;
-  height: 20vh;
+  font-family: 'Quicksand';
+  font-size: 40px;
 }
 
-.content {
+.skillbar {
+  width: 100%;
+  background-color: #ddd;
+  color: #2196f3;
+}
+
+.skills-percentage {
+  color: #2196f3;
+}
+
+.html {width: 70%; background-color: #2196F3}
+.ruby {width: 70%; background-color: #2196F3}
+.javascript {width: 60%; background-color: #2196F3}
+.python {width: 40%; background-color: #2196F3}
+.ui {width: 50%; background-color: #2196F3}
+.management {width: 70%; background-color: #2196F3}
+
+.projects-wrapper {
+  background-image: url("../images/plants.jpeg");
+  height:40vh;
+  position: relative;
+}
+
+.projects-details {
+  width: 50%;
+  height: 100%;
   position: absolute;
   right: 0;
-  bottom: 10vh;
+  top: 0;
+  bottom: 0;
+}
+
+.projects-title h1 {
+  font-family: 'Quicksand';
+  font-size: 40px;
+}
+
+.projects {
+  height: auto;
+}
+
+ul.project-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul img {
+  border-radius: 20px;
+}
+
+ul.project-list li {
+  display: inline-block;
+  height: 150px;
+  margin: 0 1em 1em 0;
+  position: relative;
+  width: 200px;
+}
+
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 150px;
   left: 0;
-  font-family: 'Quicksand', sans-serif;
+  position: absolute;
+  top: 0;
+  width: 200px;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+span.text-content span {
+  display: table-cell;
   text-align: center;
+  vertical-align: middle;
+  font-family: 'Raleway';
+  font-size: 20px;
 }
 
-.content p {
-  word-spacing: 20px;
+ul.project-list li:hover span.text-content {
+  opacity: 1;
 }
 
-a:link, a:visited {
+.about-project {
+  background-color: #ddd;
+  padding: 5px;
+  font-family: 'Raleway';
+  font-size: 15px;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.contact-wrapper h1 {
+  font-family: 'Quicksand';
+  font-size: 40px;
+}
+
+.contact-wrapper {
+  text-align: center;
+  margin: 0;
+  width: 40vw;
+  heigh: 30vh;
+  font-family: 'Raleway';
+  font-size: 20px;
+  position: absolute;
+  top: 25vh;
+  left: 20vw;
+}
+
+.contact-wrapper a:link, a:visited {
   color: black;
-}
-
-@media only screen and (max-width: 500px) {
-  #intro {
-    background-position: center;
-  }
-
-  #construction h1 {
-    font-size: 10vw;
-    position: absolute;
-    right: 0;
-    top: 20vh;
-    left: 0;
-  }
-
-  .content {
-    font-size: 3vw;
-  }
+  text-decoration: none;
 }
