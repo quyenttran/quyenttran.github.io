@@ -6,6 +6,8 @@ body, html {
 .main-bg {
   background-image: url("../images/pink.jpeg");
   min-height: 100vh;
+  position: relative;
+  margin: 0;
 }
 
 .text {
@@ -193,4 +195,26 @@ ul.project-list li:hover span.text-content {
   font-size: 15px;
   border-radius: 10px;
   width: 80%;
+}
+
+.contact-wrapper h1 {
+  font-family: 'Quicksand';
+  font-size: 40px;
+}
+
+.contact-wrapper {
+  text-align: center;
+  margin: 0;
+  width: 40vw;
+  heigh: 30vh;
+  font-family: 'Raleway';
+  font-size: 20px;
+  position: absolute;
+  top: 25vh;
+  left: 20vw;
+}
+
+.contact-wrapper a:link, a:visited {
+  color: black;
+  text-decoration: none;
 }
