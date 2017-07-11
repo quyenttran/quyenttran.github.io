@@ -79,8 +79,12 @@ body, html {
   -moz-column-count: 2; /* Firefox */
   column-count: 2;
   font-family: 'Raleway';
-  display: inline-block;
   margin-top: 0;
+  padding: 0 30px 30px 30px;
+}
+
+.skills-title {
+  padding: 30px 0 20px 0;
 }
 
 .skills > p:first-child {
